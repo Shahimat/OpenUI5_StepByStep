@@ -1,4 +1,4 @@
-# Walkthrough - Step 2: Bootstrap
+# Walkthrough - Step 3: Controls
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -18,21 +18,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Чтобы работать с OpenUI5, необходимо объявить его в `index.html`.
-
-Опции загрузки:
-
-> `src` - путь до OpenUI5 (URL/URI)
-
-> `data-sap-ui-theme` - тема приложения
-
-> `data-sap-ui-libs` - библиотека (внутри OpenUI5) для пользовательской настройки интерфейса
-
-> `data-sap-ui-compatVersion` - версия совместимости с самым свежим функционалом. По дефолту не меняем.
-
-> `data-sap-ui-async` - ассинхронная загрузка ресурсов.
-
-> `data-sap-ui-resourceroots` - пространство имен (связка имя-путь).
+Вместо указания `div` мы используем стандартный контрол (control) UI5 - `sap.m.Text`.
 
 ## Лицензия
 
