@@ -1,4 +1,4 @@
-# Базовый проект OpenUI5 
+# Walkthrough Step 1
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -13,6 +13,8 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 `ui5 --version` проверяем установку
 
 ## Настройка
+
+Для прохождения данного шага ui5 пока не потребуется. Можно запустить напрямую открыв файл или запустив простой статический сервер, например: `npm install -g serve` и после `serve ./webapp`.
 
 ## Лицензия
 
