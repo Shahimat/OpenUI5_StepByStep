@@ -7,12 +7,12 @@ sap.ui.define([
     return Controller.extend('webapp.controller.App', {
         onInit : function () {
             // set data model on view
-            var oData = {
+            let oData = {
                 recipient : {
                     name : "World"
                 }
             };
-            var oModel = new JSONModel(oData);
+            let oModel = new JSONModel(oData);
             this.getView().setModel(oModel);
         },
 
