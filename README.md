@@ -1,4 +1,4 @@
-# Walkthrough - Step 12: Shell Control as Container
+# Walkthrough - Step 13: Margins and Paddings
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Добавив контрол `<Shell>` мы говорим приложению, что если экран вывода имеет большую ширину, то оно автоматически сжимается по центру принципу "почтового ящика".
+Добавляем стандартные классы стилей для адаптивной верстки приложения.
 
 ## Лицензия
 
