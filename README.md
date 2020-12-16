@@ -1,4 +1,4 @@
-# Walkthrough - Step 14: Custom CSS and Theme Colors
+# Walkthrough - Step 15: Nested Views
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,9 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Добавляем поддержку кастомных стилей.
+Добавляем вложенные **View**.
+
+ВНИМАНИЕ: в данном примере могут возникнуть ошибки с неймспейсами, лучше указывать пути относительно корневого `webapp`.
 
 ## Лицензия
 
