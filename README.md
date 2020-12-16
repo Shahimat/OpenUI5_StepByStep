@@ -1,4 +1,4 @@
-# Walkthrough - Step 13: Margins and Paddings
+# Walkthrough - Step 14: Custom CSS and Theme Colors
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Добавляем стандартные классы стилей для адаптивной верстки приложения.
+Добавляем поддержку кастомных стилей.
 
 ## Лицензия
 
