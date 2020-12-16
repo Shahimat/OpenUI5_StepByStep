@@ -1,5 +1,5 @@
 <mvc:View
-   controllerName="webapp.modules.main.controller.App"
+   controllerName="mainmodule.controller.App"
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
    <Button
