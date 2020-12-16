@@ -7,12 +7,7 @@ sap.ui.define([
     return UIComponent.extend('webapp.Component', {
 
         metadata : {
-            'rootView': {
-                'viewName': 'webapp.view.App',
-                'type': 'XML',
-                'async': true,
-                'id': 'app'
-            }
+            manifest: "json"
         },
 
         init: function () {
