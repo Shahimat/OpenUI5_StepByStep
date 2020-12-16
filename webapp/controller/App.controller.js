@@ -6,10 +6,10 @@ sap.ui.define([
     'use strict';
     return Controller.extend('webapp.controller.App', {
         onInit : function () {
-            // set data model on view
+            // применяем модель с данными oData к view
             let oData = {
                 recipient : {
-                    name : "World"
+                    name : 'World'
                 }
             };
             let oModel = new JSONModel(oData);
