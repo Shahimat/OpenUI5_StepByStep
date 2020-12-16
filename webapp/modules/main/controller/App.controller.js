@@ -3,7 +3,7 @@ sap.ui.define([
     'sap/m/MessageToast'
  ], function (Controller, MessageToast) {
     'use strict';
-    return Controller.extend('webapp.controller.App', {
+    return Controller.extend('webapp.modules.main.controller.App', {
 
         onShowHello : function () {
             // читаем текст сообщения из i18n
