@@ -1,4 +1,4 @@
-# Walkthrough - Step 19: Reuse Dialogs
+# Walkthrough - Step 20: Aggregation Binding
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,17 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Для повторного использования диалоговых окон в новых местах перенесем содержимое диалога в отдельный модуль. Для этого в папке `modules` необходимо создать следующее:
-
-```
-modules
-|-main
-|-HelloDialog
-  |-view
-  | |-HelloDialog.fragment.xml
-  |-controller
-    |-HelloDialog.js
-```
+Добавляем привязку приложения к JSON модели с данными во внешнем файле.
 
 ## Лицензия
 
