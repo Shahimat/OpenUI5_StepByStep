@@ -4,6 +4,10 @@ sap.ui.define([
  ], function (Controller, MessageToast) {
     'use strict';
     return Controller.extend('mainmodule.controller.App', {
-        
+
+        onOpenDialog : function () {
+            this.getOwnerComponent().openHelloDialog();
+        }
+
      });
  });
