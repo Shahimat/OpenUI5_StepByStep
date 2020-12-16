@@ -1,4 +1,4 @@
-# Walkthrough - Step 18: Icons
+# Walkthrough - Step 19: Reuse Dialogs
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,10 +33,17 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Поддержка стандартных иконок SAP.
+Для повторного использования диалоговых окон в новых местах перенесем содержимое диалога в отдельный модуль. Для этого в папке `modules` необходимо создать следующее:
 
-Полный список иконок SAP-а можно посмотреть по следующему адресу:
-https://sapui5.hana.ondemand.com/sdk/test-resources/sap/m/demokit/iconExplorer/webapp/index.html
+```
+modules
+|-main
+|-HelloDialog
+  |-view
+  | |-HelloDialog.fragment.xml
+  |-controller
+    |-HelloDialog.js
+```
 
 ## Лицензия
 
