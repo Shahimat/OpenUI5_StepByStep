@@ -15,29 +15,8 @@ sap.ui.define([
         },
 
 		onOpenDialog: function () {
-			let oView = this.getView();
-
-			// ленивое создание диалога (в момент запуска)
-			if (!this.pDialog) {
-				this.pDialog = Fragment.load({
-					id: oView.getId(),
-					name: "webapp.modules.main.view.HelloDialog",
-					controller: this
-				}).then(function (oDialog) {
-					// присоединить диалог к корню View
-					oView.addDependent(oDialog);
-					return oDialog;
-				});
-            } 
-            
-			this.pDialog.then(function(oDialog) {
-				oDialog.open();
-			});
-		},
-
-		onCloseDialog: function () {
-			this.byId('helloDialog').close();
-        }
+            this.getOwnerComponent().openHelloDialog();
+		}
         
     });
 });
