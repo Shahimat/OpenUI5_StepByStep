@@ -1,4 +1,4 @@
-# Walkthrough - Step 9: Component Configuration
+# Walkthrough - Step 10: Descriptor for Applications
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -18,7 +18,13 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-По сути - переходим к компонентной модели путем добавления **Component.js**. Внутри инкапсулируем добавление ресурсов.
+Вместо ручного добавления в Component.js настроичных параметров/данных используется **manifest.json** файл декларативной нотации. Для его использования в Component.js указывается соответствующая ссылка.
+
+Обязательным полем является ID в sap.app - оно определяет пространство имен приложения.
+
+rootView - корневой View (запускается первым).
+
+в разделе models описываются добавляемые модели и их типы (например JSONmodel или та же ResourceModel).
 
 ## Лицензия
 
