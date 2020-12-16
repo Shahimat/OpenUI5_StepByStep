@@ -1,4 +1,4 @@
-# Walkthrough - Step 17: Fragment Callbacks
+# Walkthrough - Step 18: Icons
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,10 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Теперь добавим колбэк функцию к кнопке диалогового окона.
+Поддержка стандартных иконок SAP.
+
+Полный список иконок SAP-а можно посмотреть по следующему адресу:
+https://sapui5.hana.ondemand.com/sdk/test-resources/sap/m/demokit/iconExplorer/webapp/index.html
 
 ## Лицензия
 
