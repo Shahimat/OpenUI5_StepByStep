@@ -22,13 +22,6 @@ sap.ui.define([
             };
             let oModel = new JSONModel(oData);
             this.setModel(oModel);
-            // применяем модель i18n к view
-            let i18nModel = new ResourceModel({
-                bundleName: 'webapp.i18n.i18n',
-                supportedLocales: [''],
-                fallbackLocale: ''
-            });
-            this.setModel(i18nModel, 'i18n');
 
         }
     });
