@@ -1,4 +1,4 @@
-# Walkthrough - Step 27: Mock Server Configuration
+# Walkthrough - Step 28: Unit Test with QUnit
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,11 +33,9 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-На предыдущем шаге мы развернули поддержку реального сервера, но для отработки приложения лучше создать локальный **мок сервер** (**Mock server**).
+Здесь мы дополним папку **test** юнит тестом форматера из шага 23.
 
-Теперь мы имеем 2 точки входа в приложение: `index.html` - главная точка входа, по сути - основное приложение и `mockServer.html` - для тестирования и отладки приложения (в данном случе - имитация поступающих данных с сервера). Данные расположены в **localService**, причем там же расположена и схема данных **metadata.xml**.
-
-Теперь после поднятия сервера через `npm run start` достаточно перейти на страницу с тестовым html `http://localhost:8080/test/mockServer.html`.
+После поднятия сервера через `npm run start` достаточно перейти на страницу с тестовым html `http://localhost:8080/test/unit/unitTests.qunit.html`.
 
 ## Лицензия
 
