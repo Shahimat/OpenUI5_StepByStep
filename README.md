@@ -1,4 +1,4 @@
-# Walkthrough - Step 35: Responsiveness
+# Walkthrough - Step 36: Device Adaptation
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Для большей отзывчивости приложения, работающего на разных девайсах, можно использовать вместо списка таблицу.
+Добавлена поддержка девайсов через модель.
 
 ## Лицензия
 
