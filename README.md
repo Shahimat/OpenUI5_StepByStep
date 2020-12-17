@@ -1,4 +1,4 @@
-# Walkthrough - Step 21: Data Types
+# Walkthrough - Step 22: Expression Binding
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Добавляем поддержку стоимости товара.
+Добавляем поддержку выражений в модели данных.
 
 ## Лицензия
 
