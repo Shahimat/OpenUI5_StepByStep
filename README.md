@@ -1,4 +1,4 @@
-# Walkthrough - Step 34: Custom Controls
+# Walkthrough - Step 35: Responsiveness
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Добавим поддержку контрола собственной разработки.
+Для большей отзывчивости приложения, работающего на разных девайсах, можно использовать вместо списка таблицу.
 
 ## Лицензия
 
