@@ -1,4 +1,4 @@
-# Walkthrough - Step 20: Aggregation Binding
+# Walkthrough - Step 21: Data Types
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Добавляем привязку приложения к JSON модели с данными во внешнем файле.
+Добавляем поддержку стоимости товара.
 
 ## Лицензия
 
