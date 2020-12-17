@@ -1,4 +1,4 @@
-# Walkthrough - Step 29: Integration Test with OPA
+# Walkthrough - Step 30: Debugging Tools
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,9 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Здесь мы дополним папку **test** навигационным тестом диалога из шага 16.
-
-После поднятия сервера через `npm run start` достаточно перейти на страницу с тестовым html `http://localhost:8080/test/integration/opaTests.qunit.html`.
+Для отладки приложения можно использовать UI5 Inspector.
 
 ## Лицензия
 
