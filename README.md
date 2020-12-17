@@ -1,4 +1,4 @@
-# Walkthrough - Step 28: Unit Test with QUnit
+# Walkthrough - Step 29: Integration Test with OPA
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,9 +33,9 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Здесь мы дополним папку **test** юнит тестом форматера из шага 23.
+Здесь мы дополним папку **test** навигационным тестом диалога из шага 16.
 
-После поднятия сервера через `npm run start` достаточно перейти на страницу с тестовым html `http://localhost:8080/test/unit/unitTests.qunit.html`.
+После поднятия сервера через `npm run start` достаточно перейти на страницу с тестовым html `http://localhost:8080/test/integration/opaTests.qunit.html`.
 
 ## Лицензия
 
