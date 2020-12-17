@@ -77,7 +77,7 @@
                     "title": "Первый роут"
                 },
                 {
-                    "pattern": "detail",
+                    "pattern": "detail/{invoicePath}",
                     "name": "detail",
                     "target": "detail",
                     "title": "Второй роут"
