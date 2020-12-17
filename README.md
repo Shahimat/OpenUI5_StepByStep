@@ -1,4 +1,4 @@
-# Walkthrough - Step 23: Custom Formatters
+# Walkthrough - Step 24: Filtering
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Добавляем поддержку форматтеров - кастомных функций отображения данных.
+Добавляем поддержку фильтрации.
 
 ## Лицензия
 
