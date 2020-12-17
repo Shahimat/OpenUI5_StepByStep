@@ -1,4 +1,4 @@
-# Walkthrough - Step 30: Debugging Tools
+# Walkthrough - Step 31: Routing and Navigation
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,43 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Для отладки приложения можно использовать UI5 Inspector.
+Добавлен роутинг (**routing**).
+
+Для редактирования роутов используется manifest.json & id каждой view. Здесь нужно быть крайне аккуратным и следить за корректностью ввода данных.
+
+**config** - влияет на все роуты, задает главные свойства (например - общий путь).
+
+**routes** - определяет шаблон URL записи и соответствие ему целевых view (например URL `https://localhost:8080/index.html#detail` соответствует таргету (цели) с именем `detail`). Поле name для routes вроде как не особо нужно.
+
+**targets** - определяет параметры целевого view, к которому обращается роут (в частности - имя, путь до view, ...).
+
+ВАЖНО - можно задавать комбинированные роуты, например так:
+
+```JSON
+"routes": [
+    {
+        "pattern": "",
+        "name":    "startPages",
+        "target":  ["defaultMaster", "defaultDetail"]
+    }
+],
+"targets": {
+    "defaultMaster": {
+        "viewId":   "master",
+        "viewName": "Master",
+        "viewPath": "mainpath.view", 
+        "controlAggregation": "masterPages"
+    },
+    "defaultDetail": {
+        "viewId":   "detail",
+        "viewName": "Detail",
+        "viewPath": "mainpath.view", 
+        "controlAggregation": "detailPages"
+    }
+}
+```
+
+Такая запись особенно востребована для страниц с множественной загрузкой View наподобие master-detail страницы (см. SplitApp).
 
 ## Лицензия
 
