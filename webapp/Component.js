@@ -2,8 +2,9 @@ sap.ui.define([
     'sap/ui/core/UIComponent',
     'sap/ui/model/json/JSONModel',
     'sap/ui/model/resource/ResourceModel',
-	'./modules/HelloDialog/controller/HelloDialog'
-], function (UIComponent, JSONModel, ResourceModel, HelloDialog) {
+	'./modules/HelloDialog/controller/HelloDialog',
+	'sap/ui/Device'
+], function (UIComponent, JSONModel, ResourceModel, HelloDialog, Device) {
     'use strict';
     return UIComponent.extend('webapp.Component', {
 
@@ -23,6 +24,11 @@ sap.ui.define([
             };
             let oModel = new JSONModel(oData);
             this.setModel(oModel);
+
+			// set device model
+			var oDeviceModel = new JSONModel(Device);
+			oDeviceModel.setDefaultBindingMode('OneWay');
+			this.setModel(oDeviceModel, 'device');
 
             // set dialog
             this._helloDialog = new HelloDialog(this.getRootControl());
