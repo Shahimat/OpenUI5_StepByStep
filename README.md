@@ -1,4 +1,4 @@
-# Walkthrough - Step 32: Routing with Parameters
+# Walkthrough - Step 33: Routing Back and History
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-В рамках роутинга добавлена поддержка передаваемых параметров (в хэш части).
+В рамках роутинга добавлена возвращение на предыдущий экран через стандратный контрол detail страницы (navBtn) при помощи прямого изменения роута или по возможности - через использование истории переходов.
 
 ## Лицензия
 
