@@ -1,7 +1,8 @@
 <mvc:View
 	controllerName="webapp.modules.detail.controller.Detail"
 	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:wt="webapp.lib">
 	<Page
 		title="{i18n>detailPageTitle}"
         id="detail"
@@ -10,5 +11,9 @@
 		<ObjectHeader
 			intro="{invoice>ShipperName}"
 			title="{invoice>ProductName}"/>
+		<wt:ProductRating 
+			id="rating" 
+			class="sapUiSmallMarginBeginEnd" 
+			change=".onRatingChange"/>
 	</Page>
 </mvc:View>
