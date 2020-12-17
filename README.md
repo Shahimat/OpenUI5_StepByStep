@@ -1,4 +1,4 @@
-# Walkthrough - Step 24: Filtering
+# Walkthrough - Step 25: Sorting and Grouping
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Добавляем поддержку фильтрации.
+Добавляем поддержку сортировки и группировки.
 
 ## Лицензия
 
