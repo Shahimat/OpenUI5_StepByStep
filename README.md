@@ -1,39 +1,26 @@
-# Walkthrough - Step 38: Accessibility
+# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) Base Project
 
-v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
+## Установка UI5 tooling
 
-## Установка
-
-Используем **UI5 tooling** https://sap.github.io/ui5-tooling/pages/GettingStarted/
+Используем [**UI5 tooling**](https://sap.github.io/ui5-tooling/pages/GettingStarted/)
 
 `npm install --global @ui5/cli`
 
 `npm install --save-dev @ui5/cli`
 
-`ui5 --version` проверяем установку
+`ui5 --version` - проверяем установку
+
+`npm i -g serve` - для статики, полученной после build-а
 
 ## Настройка
 
-`ui5 use openui5@1.84.1`
+`npm install` - установка зависимостей.
 
-`ui5 add sap.ui.core sap.m sap.ui.table themelib_sap_fiori_3`
+`npm run start` - Для запуска сервера. В локальном хосте найти файл `./webapp/index.html` для обычного приложения или `./webapp/test/mockServer.html` если нужны мок данные.
 
-Добавить в **package.json**:
+`npm run build` - для запуска процесса сборки приложения. `serve ./dist` - поднимает собранное приложение. `http://localhost:5000/test/mockServer` - если нужны мок данные.
 
-```JSON
-"scripts": {
-    "start": "ui5 serve",
-    "build": "ui5 build --all"
-},
-```
-
-Для запуска сервера выполнить `npm run start`
-
-Для запуска процесса сборки приложения выполнить `npm run build`. Собранное приложение будет лежать в папке `dist` и для дальнейшего его запуска достаточно выполнить команду `serve ./dist`. Если **serve** не установлен, то: `npm i -g serve`.
-
-## Объяснение
-
-Добавлена поддержка ARIA - Accessible Rich Internet Applications. ARIA определяет способ сделать веб контент и веб приложения более доступными для людей с ограниченными возможностями.
+`npm run proxy` - если в проекте будут использоваться данные с удаленного OData сервиса.
 
 ## Лицензия
 
