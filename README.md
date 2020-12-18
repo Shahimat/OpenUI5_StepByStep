@@ -38,6 +38,12 @@ OpenUI5 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Entry points
 
+### Base project
+
+```bash
+git clone --depth 1 --branch openui5_prj_full https://github.com/Shahimat/OpenUI5_StepByStep      # Full version
+```
+
 ### Walkthrough
 
 ```bash
