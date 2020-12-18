@@ -1,6 +1,6 @@
 specVersion: '2.2'
 metadata:
-  name: openui5_sbs_walkthrough
+  name: openui5_sbs_base
 type: application
 framework:
   name: OpenUI5
