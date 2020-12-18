@@ -1,4 +1,4 @@
-# Walkthrough - Step 36: Device Adaptation
+# Walkthrough - Step 37: Content Density
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Добавлена поддержка девайсов через модель.
+Добавлена настройка плотности контента.
 
 ## Лицензия
 
