@@ -1,4 +1,4 @@
-# Walkthrough - Step 37: Content Density
+# Walkthrough - Step 38: Accessibility
 
 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
@@ -33,7 +33,7 @@ v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 ## Объяснение
 
-Добавлена настройка плотности контента.
+Добавлена поддержка ARIA - Accessible Rich Internet Applications. ARIA определяет способ сделать веб контент и веб приложения более доступными для людей с ограниченными возможностями.
 
 ## Лицензия
 
