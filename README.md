@@ -36,6 +36,8 @@ OpenUI5 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 >`openui5_walkthrough` - https://openui5nightly.hana.ondemand.com/1.84.1/#/topic/3da5f4be63264db99f2e5b04c5e853db
 
+>`openui5_odatav4` - https://openui5.hana.ondemand.com/1.84.1/#/topic/bcdbde6911bd4fc68fd435cf8e306ed0
+
 ## Entry points
 
 ### Base project
@@ -88,6 +90,18 @@ git checkout walkthrough_step_37     # Step 37:  Content Density
 git checkout walkthrough_step_38     # Step 38:  Accessibility
 ```
 
+### Odata V4
+
+```bash
+git checkout odatav4_step_1   # Step 1: The Initial App
+git checkout odatav4_step_2   # Step 2: Data Access and Client-Server Communication
+git checkout odatav4_step_3   # Step 3: Automatic Data Type Detection
+git checkout odatav4_step_4   # Step 4: Filtering, Sorting, and Counting
+git checkout odatav4_step_5   # Step 5: Batch Groups
+git checkout odatav4_step_6   # Step 6: Create and Edit
+git checkout odatav4_step_7   # Step 7: Delete
+git checkout odatav4_step_8   # Step 8: OData Operations
+```
 
 ## Лицензия
 
