@@ -1,4 +1,4 @@
-# Step 3: Automatic Data Type Detection
+# Step 4: Filtering, Sorting, and Counting
 
 ## Установка UI5 tooling
 
@@ -24,7 +24,7 @@
 
 ## Описание
 
-Добавляем проверку типов.
+Добавляем фильтрацию, сортировку и побсчет.
 
 ## Лицензия
 
