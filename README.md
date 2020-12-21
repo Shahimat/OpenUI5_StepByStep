@@ -1,4 +1,4 @@
-# Step 2: Data Access and Client-Server Communication
+# Step 3: Automatic Data Type Detection
 
 ## Установка UI5 tooling
 
@@ -24,7 +24,7 @@
 
 ## Описание
 
-Вроде и на первом шаге оно так-же работало - ну да ладно, просто смотрите дальше.
+Добавляем проверку типов.
 
 ## Лицензия
 
