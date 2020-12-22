@@ -10,7 +10,7 @@
             "version": "0.0.1"
         },
         "dataSources": {
-            "invoiceRemote": {
+            "productRemote": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/",
                 "type": "OData",
                 "settings": {
@@ -53,8 +53,8 @@
                     "fallbackLocale": ""
                 }
             },
-            "invoice": {
-                "dataSource": "invoiceRemote"
+            "product": {
+                "dataSource": "productRemote"
             }
         },
         "resources": {
