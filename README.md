@@ -1,4 +1,4 @@
-# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) Simple Dev Application
+# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) my OData V2 demo-project. Step 1: Initial App
 
 ## Установка UI5 tooling
 
@@ -24,7 +24,7 @@
 
 ## Описание
 
-Базовый dev проект для проведения UI анализов.
+Моя собственная демонстрация простого проекта с OData V2. Здесь представлен демо-вариант самого приложения, в котором будем проводить тесты.
 
 ## Лицензия
 
