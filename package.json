@@ -1,12 +1,17 @@
 {
-  "name": "openui5_sbs",
+  "name": "openui5_sbs_walkthrough",
   "version": "0.0.1",
   "description": "openui5 git document step by step",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Shahimat/OpenUI5_StepByStep"
+    "type": "git",
+    "url": "https://github.com/Shahimat/OpenUI5_StepByStep"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "ui5 serve",
+    "build": "ui5 build --all",
+    "tree": "ui5 tree --full --json > tree.json",
+    "proxy": "node proxy.js"
+  },
   "keywords": [
     "openui5",
     "git",
@@ -14,5 +19,9 @@
     "stepbystep"
   ],
   "author": "Gevorg Nakhapetyan <ngs22071993@gmail.com> (https://github.com/shahimat)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@ui5/cli": "^2.7.0",
+    "cors-anywhere": "^0.4.3"
+  }
 }
