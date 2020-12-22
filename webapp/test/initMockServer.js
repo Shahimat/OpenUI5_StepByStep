@@ -1,5 +1,5 @@
 sap.ui.define([
-	'../localService/mockserver'
+	'webapp/test/localService/mockserver'
 ], function (mockserver) {
 	'use strict';
 

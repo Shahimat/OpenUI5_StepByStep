@@ -29,7 +29,7 @@
     },
     "sap.ui5": {
         "rootView": {
-            "viewName": "webapp.modules.main.view.App",
+            "viewName": "webapp.view.App",
             "type": "XML",
             "async": true,
             "id": "app"
@@ -63,42 +63,6 @@
                     "uri": "css/style.css"
                 }
             ]
-        },
-        "routing": {
-            "config": {
-                "routerClass": "sap.m.routing.Router",
-                "viewType": "XML",
-                "viewPath": "webapp.modules.main.view",
-                "controlId": "app",
-                "controlAggregation": "pages",
-                "async": true
-            },
-            "routes": [
-                {
-                    "pattern": "",
-                    "name": "overview",
-                    "target": "overview",
-                    "title": "Первый роут"
-                },
-                {
-                    "pattern": "detail/{invoicePath}",
-                    "name": "detail",
-                    "target": "detail",
-                    "title": "Второй роут"
-                }
-            ],
-            "targets": {
-                "overview": {
-                    "viewPath": "webapp.modules.main.view",
-                    "viewId": "overview",
-                    "viewName": "Overview"
-                },
-                "detail": {
-                    "viewPath": "webapp.modules.detail.view",
-                    "viewId": "detail",
-                    "viewName": "Detail"
-                }
-            }
         }
     }
 }
