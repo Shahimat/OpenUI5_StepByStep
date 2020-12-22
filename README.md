@@ -1,4 +1,4 @@
-# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) Base Project
+# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) Simple Dev Application
 
 ## Установка UI5 tooling
 
@@ -21,6 +21,10 @@
 `npm run build` - для запуска процесса сборки приложения. `serve ./dist` - поднимает собранное приложение. `http://localhost:5000/test/mockServer` - если нужны мок данные.
 
 `npm run proxy` - если в проекте будут использоваться данные с удаленного OData сервиса.
+
+## Описание
+
+Базовый dev проект для проведения UI анализов.
 
 ## Лицензия
 
