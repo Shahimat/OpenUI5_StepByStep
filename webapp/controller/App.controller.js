@@ -25,7 +25,20 @@ sap.ui.define([
         },
         
         onCreate: function () {
-
+            this.odataModel.create('/Products', {
+                'ProductName' : 'some',
+                'UnitPrice' : 100
+            }, 
+            {
+                success: function (oData, response) {
+                    this.MessageToast.show('OData create success');
+                    console.log(oData, response);
+                }.bind(this),
+                error: function (oError) {
+                    this.MessageToast.show('OData create error');
+                    console.log(oError);
+                }.bind(this)
+            });
         },
         
         onChange: function () {
