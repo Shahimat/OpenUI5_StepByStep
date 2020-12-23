@@ -1,4 +1,4 @@
-# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) my OData V2 demo-project. Step 5: Delete
+# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) my OData V2 demo-project. Step 6: Sort
 
 ## Установка UI5 tooling
 
@@ -24,7 +24,7 @@
 
 ## Описание
 
-На данном шаге мы удаляем выбранное поле данных через модель.
+На данном шаге мы добавляем функционал сортировки.
 
 ## Лицензия
 
