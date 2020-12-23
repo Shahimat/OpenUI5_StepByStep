@@ -1,4 +1,4 @@
-# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) my OData V2 demo-project. Step 6: Sort
+# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) my OData V2 demo-project. Step 7: Refresh
 
 ## Установка UI5 tooling
 
@@ -24,7 +24,7 @@
 
 ## Описание
 
-На данном шаге мы добавляем функционал сортировки.
+На данном шаге мы добавляем функционал обновления модели.
 
 ## Лицензия
 
