@@ -1,4 +1,4 @@
-# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) my OData V2 demo-project. Step 3: Create
+# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) my OData V2 demo-project. Step 4: Change
 
 ## Установка UI5 tooling
 
@@ -24,7 +24,7 @@
 
 ## Описание
 
-На данном шаге мы добавили создание новой записи в OData модели.
+На данном шаге мы обновляем (изменяем) выбранное поле данных через обновление модели.
 
 ## Лицензия
 
