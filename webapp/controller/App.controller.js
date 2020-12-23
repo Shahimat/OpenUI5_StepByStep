@@ -6,11 +6,17 @@ sap.ui.define([
     return Controller.extend('webapp.controller.App', {
 
         productList: null,
+        productListBinding: null,
         productSelectedItem: null,
         productSelectedItemPos: null,
+        odataModel: null,
+        MessageToast: null,
 
         onInit: function () {
             this.productList = this.byId('productList');
+            this.productListBinding = this.productList.getBinding('items');
+            this.odataModel = this.getView().getModel('product');
+            this.MessageToast = MessageToast;
         },
 
         onSelectionChange: function (oEvent) {
