@@ -1,4 +1,4 @@
-# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) my OData V2 demo-project. Step 2: View buttons
+# [OpenUI5 v1.84.1](https://openui5nightly.hana.ondemand.com/1.84.1/) my OData V2 demo-project. Step 3: Create
 
 ## Установка UI5 tooling
 
@@ -24,12 +24,7 @@
 
 ## Описание
 
-На данном шаге мы добавили отображение всех используемых в последсвтии кнопок, а именно:
-1. Создание
-2. Изменение
-3. Удаление
-4. Сортировка
-5. Обновление
+На данном шаге мы добавили создание новой записи в OData модели.
 
 ## Лицензия
 
