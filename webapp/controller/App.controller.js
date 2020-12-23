@@ -72,7 +72,7 @@ sap.ui.define([
         },
         
         onRefresh: function () {
-
+            this.odataModel.refresh();
         },
 
      });
