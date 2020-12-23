@@ -1,7 +1,8 @@
 sap.ui.define([
     'sap/ui/core/mvc/Controller',
-    'sap/m/MessageToast'
- ], function (Controller, MessageToast) {
+    'sap/m/MessageToast',
+    'sap/ui/model/Sorter'
+ ], function (Controller, MessageToast, Sorter) {
     'use strict';
     return Controller.extend('webapp.controller.App', {
 
@@ -67,7 +68,7 @@ sap.ui.define([
         },
         
         onSort: function () {
-
+            this.productListBinding.sort(new Sorter('ProductName', false));
         },
         
         onRefresh: function () {
