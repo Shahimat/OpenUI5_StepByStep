@@ -9,6 +9,7 @@ sap.ui.define([
         productListBinding: null,
         productSelectedItem: null,
         productSelectedItemPos: null,
+        productSelectedData: null,
         odataModel: null,
         MessageToast: null,
 
@@ -22,6 +23,11 @@ sap.ui.define([
         onSelectionChange: function (oEvent) {
             this.productSelectedItem = this.productList.getSelectedItem();
             this.productSelectedItemPos = oEvent.getSource().getSelectedContextPaths()[0].match(/\((\d+)\)/)[1];
+            this.productSelectedData = {
+                ProductID:    Number(this.productSelectedItem.getCells()[0].getProperty('value')),
+                ProductName:         this.productSelectedItem.getCells()[1].getProperty('value'),
+                UnitPrice:    Number(this.productSelectedItem.getCells()[2].getProperty('value'))
+            };
         },
         
         onCreate: function () {
@@ -42,7 +48,13 @@ sap.ui.define([
         },
         
         onChange: function () {
-
+            if (!this.productSelectedItemPos) {
+                MessageToast.show('Ничего не выбрано!');
+                return;
+            }
+            this.odataModel.update(`/Products(${this.productSelectedItemPos})`, {
+                UnitPrice: this.productSelectedData.UnitPrice + 137,
+            });
         },
         
         onDelete: function () {
