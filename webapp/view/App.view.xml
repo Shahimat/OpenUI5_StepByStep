@@ -14,7 +14,41 @@
                   growingThreshold="10"
                   items="{
                      path: 'product>/Products'
-                  }">
+                  }"
+                  mode="SingleSelectLeft"
+                  selectionChange="onSelectionChange">
+                  <headerToolbar>
+                     <OverflowToolbar>
+                        <content>
+                           <ToolbarSpacer/>
+                           <Button
+                              id="addProductButton"
+                              icon="sap-icon://add"
+                              tooltip="{i18n>createButtonText}"
+                              press=".onCreate"/>
+                           <Button
+                              id="changeProductButton"
+                              icon="sap-icon://journey-change"
+                              tooltip="{i18n>changeButtonText}"
+                              press=".onChange"/>
+                           <Button
+                              id="deleteProductButton"
+                              icon="sap-icon://delete"
+                              tooltip="{i18n>deleteButtonText}"
+                              press=".onDelete"/>
+                           <Button
+                              id="sortProductButton"
+                              icon="sap-icon://sort"
+                              tooltip="{i18n>sortButtonText}"
+                              press=".onSort"/>
+                           <Button
+                              id="refreshProductButton"
+                              icon="sap-icon://refresh"
+                              tooltip="{i18n>refreshButtonText}"
+                              press=".onRefresh"/>
+                        </content>
+                     </OverflowToolbar>
+                  </headerToolbar>
                   <columns>
                      <Column id="productId">
                         <Text text="{i18n>productId}"/>
