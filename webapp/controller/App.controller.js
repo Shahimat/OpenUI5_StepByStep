@@ -26,6 +26,10 @@ sap.ui.define([
 
         },
         
+        onDelete: function () {
+
+        },
+        
         onSort: function () {
 
         },
