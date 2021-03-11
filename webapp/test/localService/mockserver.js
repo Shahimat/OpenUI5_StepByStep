@@ -6,7 +6,6 @@ sap.ui.define([
 
     return {
         init: function () {
-
             // создаем мок сервер
             let oMockServer = new MockServer({
                 rootUri: 'https://services.odata.org/V2/Northwind/Northwind.svc/'
