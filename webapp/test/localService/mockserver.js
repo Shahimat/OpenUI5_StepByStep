@@ -7,11 +7,11 @@ sap.ui.define([
     return {
         init: function () {
             // создаем мок сервер
-            var oMockServer = new MockServer({
+            let oMockServer = new MockServer({
                 rootUri: 'https://services.odata.org/V2/Northwind/Northwind.svc/'
             });
 
-            var oUriParameters = new UriParameters(window.location.href);
+            let oUriParameters = new UriParameters(window.location.href);
 
             // Настраиваем задержку для мок сервера
             MockServer.config({
@@ -20,8 +20,8 @@ sap.ui.define([
             });
 
             // симуляция данных
-            var sPath = '../localService';
-            oMockServer.simulate(sPath + '/metadata.xml', sPath + '/mockdata');
+            let sPath = './localService';
+            oMockServer.simulate(`${sPath}/metadata.xml`, `${sPath}/mockdata`);
 
             // запуск
             oMockServer.start();
