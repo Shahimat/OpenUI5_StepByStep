@@ -1,7 +1,7 @@
 specVersion: '2.2'
 metadata:
-  name: openui5_sbs_base
-type: application
+  name: openui5_npm_lib
+type: library
 framework:
   name: OpenUI5
   version: "1.84.1"
