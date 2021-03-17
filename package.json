@@ -9,7 +9,11 @@
   "scripts": {
     "start": "ui5 serve",
     "build": "ui5 build --all",
-    "tree": "ui5 tree --full --json > tree.json"
+    "tree": "ui5 tree --full --json > tree.json",
+    "install": "napa"
+  },
+  "napa": {
+    "ui5lib": "git://github.com/Shahimat/OpenUI5_StepByStep#openui5_npm_lib"
   },
   "keywords": [
     "openui5",
@@ -20,6 +24,7 @@
   "author": "Gevorg Nakhapetyan <ngs22071993@gmail.com> (https://github.com/shahimat)",
   "license": "MIT",
   "devDependencies": {
-    "@ui5/cli": "^2.7.0"
+    "@ui5/cli": "^2.7.0",
+    "napa": "^3.0.0"
   }
 }

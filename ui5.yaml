@@ -10,3 +10,16 @@ framework:
     - name: sap.ui.core
     - name: sap.ui.table
     - name: themelib_sap_fiori_3
+--- # отделяет extension от описания проекта
+specVersion: "2.2"
+kind: extension
+type: project-shim
+metadata:
+  name: legacy-lib-shims # тут видимо все равно что писать - ни на что не влияет
+shims:
+  configurations:
+    ui5lib: # имя соответствует названию npm модуля
+      specVersion: "2.2"
+      type: library
+      metadata:
+        name: ui5lib # лучше оставить как выше

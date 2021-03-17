@@ -2,7 +2,7 @@
 	controllerName="webapp.modules.detail.controller.Detail"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:wt="webapp.lib">
+	xmlns:wt="ui5lib.lib">
 	<Page
 		title="{i18n>detailPageTitle}"
         id="detail"
