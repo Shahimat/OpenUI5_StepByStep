@@ -13,7 +13,7 @@
     "install": "napa"
   },
   "napa": {
-    "ui5lib": "git://github.com/Shahimat/OpenUI5_StepByStep#openui5_npm_lib"
+    "ui5lib": "git://github.com/Shahimat/OpenUI5_StepByStep.git#ui5lib_v0.1"
   },
   "keywords": [
     "openui5",
