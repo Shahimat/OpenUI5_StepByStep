@@ -41,6 +41,10 @@ OpenUI5 v1.84.1 https://openui5nightly.hana.ondemand.com/1.84.1/
 
 >`openui5_odatav2_my` - упрощенная работа с OData V2.
 
+>`openui5_loadlib` - пример загрузки кастомной ui5 npm библиотеки.
+
+>`openui5_npm_lib` - пример разработки кастомной ui5 npm библиотеки.
+
 ## Entry points
 
 ### Base project
