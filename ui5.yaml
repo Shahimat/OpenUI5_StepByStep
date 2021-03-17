@@ -1,7 +1,6 @@
 specVersion: '2.2'
 metadata:
   name: openui5_npm_lib
-  namespace: lib
 type: library
 framework:
   name: OpenUI5
