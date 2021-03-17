@@ -28,25 +28,25 @@
 
 Допустим готовая UI5 библиотека уже лежит в гит по адресу: `git://github.com/Shahimat/OpenUI5_StepByStep#openui5_npm_lib`. Как ее подключить?
 
-Для этого настраиваем npm библиотеку [napa](https://www.npmjs.com/package/napa) `npm i --save-dev napa`.
+UI5 tooling использует под капотом библиотеку [napa](https://www.npmjs.com/package/napa) для подгрузки кастомных библиотек. В этом примере обходится стороной необходимость установки самой библиотеки **napa** (на практике вскрылись косяки загрузки npm модулей с использованием этой библиотеки). Но кое-что все таки прийдется продублировать, а имеено.
 
 В `package.json`:
 
 ```JSON
 {
   ...
-  "scripts": {
-    ...
-    "install": "napa"
+  "napa": { // Без этой записи ui5 serve не увидит библиотеку
+    "ui5lib": "git://github.com/Shahimat/OpenUI5_StepByStep.git#ui5lib_v0.1"
   },
-  "napa": {
-    "ui5lib": "git://github.com/Shahimat/OpenUI5_StepByStep#openui5_npm_lib" // #openui5_npm_lib - ссыль на ветку
+  ...
+  "dependencies": {
+    "ui5lib": "git://github.com/Shahimat/OpenUI5_StepByStep.git#ui5lib_v0.1" // #ui5lib_v0.1 - ссыль на тэг
   },
   ...
 }
 ```
 
-Удаляем `node_modules`. Запускаем `npm i`. P.S. для сомневающихся: проекты **napa** точно так-же загрузятся в `node_modules` (можете не искать артефакты **napa**!).
+Удаляем `node_modules`. Запускаем `npm i`.
 
 В файле `ui5.yaml` остается настроить [extension](https://sap.github.io/ui5-tooling/pages/Configuration/#extension-configuration) для загрузки [проектной шины](https://sap.github.io/ui5-tooling/pages/extensibility/ProjectShims/) - конфигурации, отвечающей за связность ссылок и соответствия им пространства имен.
 
