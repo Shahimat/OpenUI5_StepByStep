@@ -5,7 +5,7 @@ sap.ui.define([
 	'sap/m/Button'
 ], function (Control, RatingIndicator, Label, Button) {
     'use strict';
-    return Control.extend('openui5_npm_lib.ProductRating', {
+    return Control.extend('ui5lib.lib.ProductRating', {
 
         metadata : {
 			properties : {
