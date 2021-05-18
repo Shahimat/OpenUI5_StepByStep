@@ -1,6 +1,6 @@
 {
-  "name": "openui5_sbs_walkthrough",
-  "version": "0.0.1",
+  "name": "openui5_base",
+  "version": "0.1.0",
   "description": "openui5 git document step by step",
   "repository": {
     "type": "git",

@@ -1,0 +1,13 @@
+<mvc:View
+   id="overview"
+   controllerName="webapp.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+>
+    <Page 
+        title="{i18n>homePageTitle}"
+        class="sapUiResponsiveContentPadding"
+    >
+        <Text text="Hello World!"/>
+    </Page>
+</mvc:View>

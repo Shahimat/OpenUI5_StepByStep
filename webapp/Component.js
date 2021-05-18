@@ -1,12 +1,11 @@
 sap.ui.define([
-    'sap/ui/core/UIComponent',
-    'sap/ui/model/json/JSONModel'
-], function (UIComponent, JSONModel) {
+    'sap/ui/core/UIComponent'
+], function (UIComponent) {
     'use strict';
     return UIComponent.extend('webapp.Component', {
 
         metadata : {
-            manifest: "json"
+            manifest: 'json'
         },
 
         init: function () {
@@ -14,13 +13,23 @@ sap.ui.define([
             UIComponent.prototype.init.apply(this, arguments);
 
             // применяем модель с данными oData к view
-            let oData = {
-                recipient : {
-                    name : 'World'
+            var deviceModel = new sap.ui.model.json.JSONModel({
+                isPhone: sap.ui.Device.system.phone
+            });
+            this.setModel(deviceModel, 'device');
+
+            this.getRouter().initialize();
+        },
+
+        getContentDensityClass: function () {
+            if (!this._sContentDensityClass) {
+                if (!sap.ui.Device.support.touch) {
+                    this._sContentDensityClass = 'sapUiSizeCompact';
+                } else {
+                    this._sContentDensityClass = 'sapUiSizeCozy';
                 }
-            };
-            let oModel = new JSONModel(oData);
-            this.setModel(oModel);
+            }
+            return this._sContentDensityClass;
         }
 
     });

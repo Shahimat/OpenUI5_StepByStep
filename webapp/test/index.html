@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>OpenUI5 Base Project</title>
+        <script
+            id="sap-ui-bootstrap"
+            src="/resources/sap-ui-core.js"
+            data-sap-ui-theme="sap_fiori_3"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-async="true"
+            data-sap-ui-preload=""
+            data-sap-ui-resourceroots='{
+                "webapp": "../"
+            }'>
+        </script>
+        <script>
+            sap.ui.getCore().attachInit(function() {
+                sap.ui.require([
+                    'webapp/test/mock',
+                    'sap/ui/core/ComponentContainer'
+                ], function (mock, ComponentContainer) {
+                    new ComponentContainer({
+                        name: 'webapp',
+                        height: '100%',
+                        async: true,
+                        componentCreated: function (oEvent) {
+                            mock.init( oEvent.getParameters().component );
+                        }
+                    }).placeAt('content');
+                });
+            });
+        </script>
+    </head>
+    <body class="sapUiBody" id="content">
+    </body>
+</html>
